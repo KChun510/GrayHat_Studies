@@ -1,0 +1,18 @@
+- docker run -it i386/ubuntu bash
+Explantion: 
+	Run the docker container "i386/ubuntu", download if not on local. 
+	-it flag, is a combo -i "interactive mode" keeps the stdin open. -t, allocates a virtual terminal to the container
+	Bash, command opens a bash shell whithin the term
+
+- docker start -i <docker container id -or- name>
+	-i opens in interactive mode
+
+- docker stop <docker container id -or- name>
+
+- docker ps
+	list running docker containers
+
+- docker ps -a 
+	list all containers (running and stopped) 
+
+
