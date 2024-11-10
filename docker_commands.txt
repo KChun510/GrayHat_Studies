@@ -1,4 +1,4 @@
-- docker run -it i386/ubuntu bash
+- docker run -it --name <your-custom-name> <docker image -or- name> bash
 Explantion: 
 	Run the docker container "i386/ubuntu", download if not on local. 
 	-it flag, is a combo -i "interactive mode" keeps the stdin open. -t, allocates a virtual terminal to the container
@@ -14,5 +14,19 @@ Explantion:
 
 - docker ps -a 
 	list all containers (running and stopped) 
+
+
+Docker Hub:
+- docker commit [OPTIONS] <container_id> <your_username>/<image_name -or- docker_hub repo name>:<tag>
+- docker push [OPTIONS] <your_username>/<image_name -or- docker_hub repo_name>:<tag>
+- docker pull [OPTIONS] <image_name -or- docker_hub repo_name>:<tag>
+
+
+Copy Cont from Contatiner to host:
+- docker cp <container_name>:/path/to/file.txt /path/on/host/machine/file.txt
+
+
+
+
 
 
